@@ -138,11 +138,11 @@ body{
 
 .input-group input:not([type="submit"]) {
   width: 20rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   border: none;
   background: transparent;
   border-bottom: 0.2rem solid #777;
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0 ,0,0, 0;
   font-family: "Baloo Da 2", serif;
   font-size: 1.8rem;
   color: #eee;
@@ -151,16 +151,16 @@ body{
 }
 
 .income input:not([type="submit"]):focus {
-  border-bottom: 0.2rem solid #77c987;
+  border-bottom: 0.1rem solid #77c987;
 }
 
 .expence input:not([type="submit"]):focus {
-  border-bottom: 0.2rem solid #ff716e;
+  border-bottom: 0.1rem solid #ff716e;
 }
 
 .input-group input[type="submit"] {
-  width: 10rem;
-  padding: 0.7rem;
+  width: 8rem;
+  padding: 0.2rem;
   border: none;
   outline: none;
   border-radius: 0.7rem;
