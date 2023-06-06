@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import Header from './components/Header'
 import Balance from './components/Balance'
-import AddTRansaction from './components/AddTRansaction'
+import Income from './components/Income'
+import Expense from './components/Expense'
+import AddTransaction from './components/AddTRansaction'
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
        <div className='app-wrapper'>
         <Header/>
         <Balance/>
-        <AddTRansaction/>
+      <AddTransaction/>
+        <Income/>
+        <Expense/>
        </div>
     </div>
     

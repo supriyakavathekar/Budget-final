@@ -1,6 +1,6 @@
 import React from 'react'
 
-function AddTRansaction() {
+function AddTransaction() {
   return (
     <div  className='form-wrapper'>
       <form >
@@ -24,4 +24,4 @@ function AddTRansaction() {
   )
 }
 
-export default AddTRansaction
+export default AddTransaction

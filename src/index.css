@@ -190,3 +190,34 @@ body{
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+
+
+.transactions {
+  margin-top: 6rem;
+}
+
+.transactions h2 {
+  font-family: "Baloo da 2", serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.transactions-income {
+  grid-column: 2 / 3;
+  grid-row: 5 / -1;
+}
+
+.transactions-expense {
+  grid-column: 3 / -1;
+  grid-row: 5 / -1;
+}
+
+
+
+
+
+
+
