@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Header from './components/Header'
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
     <div className='container'>
        <div className='app-wrapper'>
-        <h1>app</h1>
+        <Header/>
        </div>
     </div>
     
