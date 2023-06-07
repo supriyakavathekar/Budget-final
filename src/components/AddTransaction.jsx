@@ -1,6 +1,8 @@
 import React from 'react'
 
-function AddTransaction({setbalance ,setamountPaid}) {
+function AddTransaction({setbalance ,setamountPaid, setdescription, description }) {
+
+
 
 
     function submithandler(e) {
@@ -9,6 +11,7 @@ function AddTransaction({setbalance ,setamountPaid}) {
             let result = i = i + Number(e.target.money.value)
             return result
         })
+      setdescription(i => [...i, `  ${e.target.description.value} ,${e.target.money.value}` ])
       
     }
 
@@ -31,6 +34,24 @@ function AddTransaction({setbalance ,setamountPaid}) {
             <input placeholder='Amount' type="number" name="money" autoComplete='off' />
             <input type="submit" value="submit" />
         </div>
+        <div className='transactions'>
+        <h2>Transactions History</h2>
+        </div>
+        {description.map (i => <div className=' transactions-income'>
+        
+        <ul className='c-list'>
+            <li className='transaction'>
+              <span className='transaction-text'>
+              {i}
+              </span>
+              <span className='transaction-amount'></span>
+              <button className='delete-btn'>
+                <i className="fas fa-trash"></i>
+              </button>
+            </li>
+        </ul>
+
+    </div>)}
       </form>  
         
       <form onSubmit={paidHandler}>
