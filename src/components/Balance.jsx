@@ -1,10 +1,15 @@
 import React from 'react'
 
-function Balance() {
+function Balance({balance , setbalance , amountpaid, setamountpaid }) {
+     
+
+
+
+
   return (
     <div className='balance'>
         <h2>Your Balance</h2>
-        <h3>€ 0.00</h3>
+        <h3>{balance}</h3>
         <div className="income-expenses">
             <div className="plus">
                 <h3>Income</h3>

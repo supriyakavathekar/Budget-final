@@ -8,6 +8,8 @@ import AddTransaction from './components/AddTRansaction'
 
 function App() {
 
+  const [balance, setbalance] = useState(0)
+  const [amountPaid, setamountPaid] = useState(0)
 
 
   return (
@@ -16,8 +18,8 @@ function App() {
     <div className='container'>
        <div className='app-wrapper'>
         <Header/>
-        <Balance/>
-      <AddTransaction/>
+        <Balance balance= {balance} setbalance = {setbalance} amountPaid= {amountPaid} setamountPaid = {setamountPaid}/>
+      <AddTransaction setbalance= {setbalance} setamountPaid = {setamountPaid}/>
         <Income/>
         <Expense/>
        </div>
